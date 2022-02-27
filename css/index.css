@@ -28,3 +28,9 @@ table{
 .boton{
     margin-left: 70%;
 }
+
+#fin{
+    text-align: center;
+    font: oblique bold 120% cursive;;
+    background-color: aqua;
+}

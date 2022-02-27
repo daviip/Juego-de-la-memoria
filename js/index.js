@@ -38,6 +38,7 @@ function reiniciar()
     idj1 = "";
     idj2 = "";
     contador = 0;
+    document.getElementById("fin").innerText= "";
 
 };
 
