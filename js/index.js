@@ -7,6 +7,9 @@ let contador = 0;
 
 function empezar()
 {
+    document.getElementById("n1").setAttribute("hidden", "");
+    document.getElementById("juego").removeAttribute("hidden");
+
     let junto = [];
     let dinos = ["1", "2", "3", "4", "5", "6", "1", "2", "3", "4", "5", "6"]
     dinos.sort(function () { return Math.random() - 0.5 });
@@ -23,7 +26,6 @@ function empezar()
 
 };
 
-/////////REVISARLO//////////
 function reiniciar()
 {
 

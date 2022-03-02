@@ -12,7 +12,7 @@
 
 <body>
     <h1>Juego de las parejas</h1>
-    <table>
+    <table id="juego" hidden>
         <tr>
             <td>
                 <div id="0" value="valor" onclick="giro(this)"><img src="./images/trasera.png" alt="trasera" id="0img">
@@ -69,6 +69,13 @@
         </tr>
     </table>
 
+    <div id="n1">
+    <div id="inicio">
+        El juego consiste en adivinar las parejas de todas las cartas.  <br>
+        Bienvenido a la versión dinosaurios!
+    </div>
+    <img src="./images/portada.png" alt="portada" id="portada">
+</div>
     <div class="boton">
         <button onclick="empezar()" id="emp">Empezar</button>
         <button onclick="reiniciar()" id="rei">Reiniciar</button>
