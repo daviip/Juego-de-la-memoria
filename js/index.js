@@ -37,10 +37,13 @@ function reiniciar() {
     idj2 = "";
     contador = 0;
     document.getElementById("fin").innerText = "";
+    document.getElementById("fin").setAttribute("hidden");
 };
 
 
 function giro(carta) {
+    // document.getElementById("fin").removeAttribute("hidden");
+    // document.getElementById("fin").innerText += " 10 intentos";
     if (j1 == "" || j2 == "") {
         let n = carta.value + "img";
         let c = carta.id + "img";
@@ -61,7 +64,11 @@ function giro(carta) {
                 j2 = "";
                 contador++;
                 intentos++;
-                if (contador == 6) { document.getElementById("fin").innerText = "Has acabado!! y con tan solo " + intentos + " intentos." };
+                if (contador == 6) {
+                    document.getElementById("fin").removeAttribute("hidden");
+                    document.getElementById("fin").innerText += " " + intentos + " intentos.";
+                }
+                // if (contador == 6) { document.getElementById("fin").innerText = "Has acabado!! y con tan solo " + intentos + " intentos." };
             }
             else {
                 document.getElementById(cidj1).setAttribute("onclick", "giro(this)");

@@ -35,7 +35,13 @@ table{
 #fin{
     text-align: center;
     font: oblique bold 120% cursive;;
-    background-color: aqua;
+    background-color: rgb(255, 255, 158);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    right: 40%;
+    border-radius: 5px;
+    border: 2px ridge red;
 }
 
 #inicio{
