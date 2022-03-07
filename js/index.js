@@ -37,7 +37,7 @@ function reiniciar() {
     idj2 = "";
     contador = 0;
     document.getElementById("fin").innerText = "";
-    document.getElementById("fin").setAttribute("hidden");
+    document.getElementById("fin").setAttribute("hidden", "");
 };
 
 
