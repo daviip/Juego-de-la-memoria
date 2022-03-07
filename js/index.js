@@ -66,7 +66,7 @@ function giro(carta) {
                 intentos++;
                 if (contador == 6) {
                     document.getElementById("fin").removeAttribute("hidden");
-                    document.getElementById("fin").innerText += " " + intentos + " intentos.";
+                    document.getElementById("fin").innerText = "Has acabado!! y con tan solo " + intentos + " intentos.";
                 }
                 // if (contador == 6) { document.getElementById("fin").innerText = "Has acabado!! y con tan solo " + intentos + " intentos." };
             }
